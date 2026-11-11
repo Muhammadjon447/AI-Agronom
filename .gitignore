@@ -13,3 +13,7 @@ server/venv/
 # Vaqtinchalik fayllar
 *.log
 .DS_Store
+
+# Zaxira fayllar
+*.backup
+*.save
