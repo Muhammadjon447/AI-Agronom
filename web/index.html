@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agronom — Aqlli dehqonchilik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7faf7;
+            color: #183d29;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #237b45;
+        }
+
+        nav a {
+            margin-left: 28px;
+            text-decoration: none;
+            color: #315b40;
+            font-weight: 600;
+        }
+
+        .hero {
+            min-height: 570px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px 8%;
+            background: linear-gradient(120deg, #e7f5e9, #f7faf7);
+            gap: 40px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .tag {
+            color: #27804a;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1.15;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            color: #607568;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #27804a;
+            color: white;
+        }
+
+        .secondary {
+            border: 2px solid #27804a;
+            color: #27804a;
+        }
+
+        .visual {
+            width: 390px;
+            height: 390px;
+            border-radius: 35px;
+            background: linear-gradient(145deg, #c5e9cb, #4d9b65);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 145px;
+            box-shadow: 0 20px 50px #286c4030;
+        }
+
+        .features {
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .features > p {
+            color: #718276;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: left;
+            box-shadow: 0 8px 30px #183d290d;
+        }
+
+        .card .icon {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #718276;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 30px 8%;
+            background: #173d29;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .visual {
+                width: 260px;
+                height: 260px;
+                font-size: 100px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 AI Agronom</div>
+    <nav>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#features">Imkoniyatlar</a>
+        <a href="#about">Biz haqimizda</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="tag">🌿 KELAJAK DEHQONCHILIGI</div>
+
+        <h1>O‘simliklaringiz salomatligini AI bilan himoya qiling</h1>
+
+        <p>
+            Sun’iy intellekt yordamida o‘simlik kasalliklari,
+            zararkunandalar va oziqa yetishmovchiligini aniqlang.
+            Hosilingizni aqlli texnologiyalar bilan asrang.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn primary">Boshlash →</a>
+            <a href="#features" class="btn secondary">Batafsil</a>
+        </div>
+    </div>
+
+    <div class="visual">🌱</div>
+</section>
+
+<section class="features" id="features">
+    <h2>AI Agronom imkoniyatlari</h2>
+    <p>Dehqonchilik uchun zamonaviy texnologik yechimlar</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">🔬</div>
+            <h3>Kasalliklarni aniqlash</h3>
+            <p>O‘simlik rasmini tahlil qilib, ehtimoliy kasalliklarni aniqlash.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐛</div>
+            <h3>Zararkunandalar</h3>
+            <p>Zararkunandalarni aniqlash va ularga qarshi kurash tavsiyalari.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌾</div>
+            <h3>Aqlli tavsiyalar</h3>
+            <p>O‘simlikni sog‘lom saqlash va hosildorlikni oshirish bo‘yicha maslahatlar.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="about">
+    <p>© 2026 AI Agronom. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+</body>
+</html>

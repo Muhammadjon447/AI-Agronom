@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Maxfiy sozlamalar
+.env
+.env.*
+
+# Python virtual muhit
+server/venv/
+
+# Vaqtinchalik fayllar
+*.log
+.DS_Store
